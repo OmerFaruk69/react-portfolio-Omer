@@ -1,13 +1,19 @@
-import logo from "../assets/kevinRushLogo.png"
 import { FaLinkedin } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa"
-import { FaSquareXTwitter } from "react-icons/fa6"
-import { FaInstagram } from "react-icons/fa"
-import { SiGitlab } from "react-icons/si";  // Icône pour GitLab
+import { SiGitlab } from "react-icons/si";  
+import { useLanguage } from "./traduction"; // Assure-toi que le chemin est correct
+
 
 
 const Navbar = () => {
+    const { toggleLanguage, language } = useLanguage();
     return <nav className="mb-20 flex items-center justify-between py-6">
+         <button
+        onClick={toggleLanguage}
+        className="px-4 py-2 rounded bg-neutral-700 hover:bg-neutral-600"
+      >
+        {language === "fr" ? "EN" : "FR"}
+      </button>
         <div className="flex flex-shrink-0 items-center">
            
         </div>

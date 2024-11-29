@@ -2,8 +2,9 @@
 import { HERO_CONTENT } from "../constants"
 import profilePic from "../assets/OmerProfile.jpg"
 import { motion } from "framer-motion"
-//OmerProfile.png
-//kevinRushProfile.jpg
+import { useLanguage } from "./traduction";
+
+
 const container = (delay) => ({
     hidden: { x: -100, opacity: 0 },
     visible: {
@@ -16,6 +17,7 @@ const container = (delay) => ({
 
 
 const Hero = () => {
+    const { language } = useLanguage();
     return (
         <div className="border-b border-neutral-900 pb-4 lg:mb-35">
             <div className="flex flex-wrap">
@@ -36,7 +38,7 @@ const Hero = () => {
                         <motion.p variants={container(1)}
                             initial="hidden"
                             animate="visible" className="my-2 max-w-xl py-6 font-light tracking-tighter">
-                            {HERO_CONTENT}
+                            {language === "fr" ? HERO_CONTENT.fr : HERO_CONTENT.en}
                         </motion.p>
                     </div>
                 </div>

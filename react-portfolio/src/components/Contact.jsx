@@ -1,9 +1,12 @@
 import { CONTACT } from "../constants"
+import { useLanguage } from "./traduction";
 
 const Contact = () => {
+  const { language } = useLanguage();
+
   return (
     <div className="border-b border-neutral-900 pb-20">
-      <h1 className="my-10 text-center text-4xl"> Prenez contact</h1>
+      <h1 className="my-10 text-center text-4xl"> {language === "fr" ? "Prenez contact" : " Contact us"}</h1>
       <div className="text-center tracking-tighter">
         <p className="my-4">{CONTACT.address}</p>
         <p className="my-4">{CONTACT.phoneNo}</p>

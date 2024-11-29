@@ -5,12 +5,11 @@ import { SiPython, SiPowerbi, SiJavascript } from 'react-icons/si';
 
 import { SiGitlab, SiJenkins, SiDocker } from 'react-icons/si';
 
-
-
 import {SiMongodb} from "react-icons/si"
 
 import {BiLogoPostgresql} from "react-icons/bi"
 import { animate, motion } from "framer-motion"
+import { useLanguage } from "./traduction";
 
 
 const iconVariants = (duration) => ({
@@ -28,13 +27,14 @@ const iconVariants = (duration) => ({
 
 
 const Technologies = () => {
+    const { language } = useLanguage();
   return (
     <div className="border-b border-neutral-800 pb-24">
         <motion.h1 
          whileInView={{opacity : 1 , y:0}}
          initial ={{y:-100,opacity:0}}
          transition={{duration : 1.5}}
-        className="my-20 text-center text-4xl">Base de donnée</motion.h1>
+        className="my-20 text-center text-4xl"> {language === "fr" ? "Base de donnée " : "Database "}</motion.h1>
         <motion.div 
         whileInView={{opacity : 1 , x:0}}
         initial ={{x:-100,opacity:0}}
@@ -90,7 +90,7 @@ const Technologies = () => {
          whileInView={{opacity : 1 , y:0}}
          initial ={{y:-100,opacity:0}}
          transition={{duration : 1.5}}
-        className="my-20 text-center text-4xl">Langage de programmation</motion.h1>
+        className="my-20 text-center text-4xl">{language === "fr" ? "Langage de programmation " : "Programming language "} </motion.h1>
 
 <motion.div 
         whileInView={{opacity : 1 , x:0}}
@@ -161,7 +161,7 @@ const Technologies = () => {
          whileInView={{opacity : 1 , y:0}}
          initial ={{y:-100,opacity:0}}
          transition={{duration : 1.5}}
-        className="my-20 text-center text-4xl">DevOps et Automatisation</motion.h1>
+        className="my-20 text-center text-4xl">{language === "fr" ? "DevOps et Automatisation " : " DevOps and Automation "}</motion.h1>
 
 <motion.div 
         whileInView={{opacity : 1 , x:0}}
