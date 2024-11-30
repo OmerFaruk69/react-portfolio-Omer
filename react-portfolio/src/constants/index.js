@@ -57,7 +57,7 @@ export const EXPERIENCES = [
         "Implémentation d'une VNET Data Gateway pour un accès sécurisé au Data Warehouse",
         "Création de tableaux de bord sur Power BI"
       ],
-      technologies: ["Data Factory Azure", "SQL server", "Python", "Power BI", "Virtual network"],
+      technologies: ["Data Factory Azure", "SQL Server", "Python", "Power BI", "Virtual network"],
     },
     en: {
       year: "2023 - 2024",
@@ -72,7 +72,7 @@ Mysendingbox is a secure web platform dedicated to sending postal mail. In this 
         "Implementation of a VNET Data Gateway for secure access to the Data Warehouse",
         "Creation of dashboards on Power BI"
       ],
-      technologies: ["Data Factory Azure", "SQL server", "Python", "Power BI", "Virtual-network"]
+      technologies: ["Data Factory Azure", "SQLServer", "Python", "Power BI", "Virtual-network"]
     }
   },
   {
@@ -87,7 +87,7 @@ Mysendingbox is a secure web platform dedicated to sending postal mail. In this 
         "Extraction des données de l'AS/400 avec la consolidation d'un DWH pour un besoin BI",
         "Mise en place de test automatiser pour la non régression des flux"
       ],
-      technologies: ["Talend", "AS/400", "Jenkins", "Grafana", "SQL server", " mySQL", "JS"]
+      technologies: ["Talend", "AS/400", "Jenkins", "Grafana", "SQL Server", " mySQL", "JS"]
 
     },
     en: {
@@ -101,7 +101,7 @@ Mysendingbox is a secure web platform dedicated to sending postal mail. In this 
         "Data extraction from AS/400 with consolidation of a DWH for BI needs",
         "Implementation of automated tests for regression testing of the flows"
       ],
-      technologies: ["Talend", "AS/400", "Jenkins", "Grafana", "SQLServer", " mySQL", "JS"]
+      technologies: ["Talend", "AS/400", "Jenkins", "Grafana", "SQL Server", " mySQL", "JS"]
 
     }
   },
@@ -157,7 +157,7 @@ export const PROJECTS = [
       image: project1,
       description:
         "Ce projet consiste en la mise en place d'un système de surveillance vidéo en streaming utilisant un Raspberry Pi sous Ubuntu et une mini-caméra. Le flux vidéo est accessible à distance via un téléphone mobile, grâce à un serveur local sécurisé permettant la diffusion en temps réel.",
-      technologies: ["Python", "picamera", "RaspberryPi", "Flask", "Ubuntu"]
+      technologies: ["Python", "picamera", "Raspberry Pi", "Flask", "Ubuntu"]
 
     },
     en: {
@@ -165,7 +165,7 @@ export const PROJECTS = [
       image: project1,
       description:
         "This project involves setting up a video surveillance system with streaming using a Raspberry Pi running Ubuntu and a mini-camera. The video feed is accessible remotely via a mobile phone, thanks to a secure local server enabling real-time streaming.",
-      technologies: ["Python", "picamera", "RaspberryPi", "Flask", "Ubuntu"]
+      technologies: ["Python", "picamera", "Raspberry Pi", "Flask", "Ubuntu"]
     }
 
   }

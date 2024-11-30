@@ -31,17 +31,20 @@ const Experience = () => {
                                     <li key={index}>{task}</li>
                                 ))}
                             </ul>
+                            <div className="flex flex-wrap gap-x-1 gap-y-0 mt-4 justify-center items-center lg:justify-start lg:items-start">
+
                             {language === "fr" ? experience.fr.technologies.map((tech, index) => (
                                 <span
                                     key={index}
-                                    className="mr-2 mt-4 rouded bg-neutral-900 px-2 py-1 text-sm font-mediuù text-purple-800"
+                                    className="mr-2 mt-2 rouded bg-neutral-900 px-2 py-1  text-sm font-mediuù text-purple-800"
                                 >{tech}</span>
                             )) : experience.en.technologies.map((tech, index) => (
                                 <span
                                     key={index}
-                                    className="mr-2 mt-4 rouded bg-neutral-900 px-2 py-1 text-sm font-mediuù text-purple-800"
+                                    className="mr-2 mt-2 rouded bg-neutral-900 px-2 py-1 text-sm font-mediuù text-purple-800"
                                 >{tech}</span>
                             ))}
+                            </div>
                         </div>
                     </div>
                 ))}
