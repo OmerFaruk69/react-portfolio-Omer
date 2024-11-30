@@ -24,7 +24,7 @@ const Projects = () => {
                             <div className="flex flex-wrap gap-x-1 gap-y-0 mt-4 justify-center items-center lg:justify-start lg:items-start">
                             {project.fr.technologies.map((tech , index) => (
                                 <span
-                                key={index} className="mr-2 rouded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900"> 
+                                key={index} className="mr-2 mt-2 rouded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900"> 
                                 {tech}
                                 </span>
                             ))}
